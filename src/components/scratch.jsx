@@ -47,8 +47,8 @@ useEffect(() => {
 
 
 
-// "https://i.ibb.co/Y0HPB0n/IMG-8058.jpg" 
-// "https://i.ibb.co/s6qnqCK/IMG-8153.jpg" 
-// "https://i.ibb.co/WB79Qm5/IMG-8278.jpg" 
-// "https://i.ibb.co/sgvwmty/IMG-8633.jpg" 
-// "https://i.ibb.co/ssfbm9b/IMG-8679.jpg" 
+https://i.ibb.co/Y0HPB0n/IMG-8058.jpg
+https://i.ibb.co/s6qnqCK/IMG-8153.jpg
+https://i.ibb.co/WB79Qm5/IMG-8278.jpg
+https://i.ibb.co/sgvwmty/IMG-8633.jpg
+https://i.ibb.co/ssfbm9b/IMG-8679.jpg

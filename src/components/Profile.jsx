@@ -44,7 +44,7 @@ export default function Profile(props) {
         <>
             {myBlogs.map((blog, i) => 
             {console.log(blog) 
-            return <Card key={i} title={blog['title']} content={blog['content']} id={blog['id']} loggedIn={props.loggedIn} />})}
+            return <Card key={i} title={blog['title']} content={blog['content']} id={blog['id']} loggedIn={props.loggedIn} setBlogs={setBlogs} />})}
         </>
     )
 }
