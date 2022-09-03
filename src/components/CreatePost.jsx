@@ -42,7 +42,7 @@ export default function CreatePost(props) {
                     console.error(data.error)
                 } else {
                     props.flashMessage('You have created a post!', 'success')
-                    navigate('/')
+                    navigate('/profile')
                 }
             })
 

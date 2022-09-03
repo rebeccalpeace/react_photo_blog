@@ -8,6 +8,7 @@ import Login from './components/Login';
 import CreatePost from './components/CreatePost';
 import HomePage from './components/HomePage';
 import ViewPosts from './components/ViewPosts';
+import ViewPost from './components/ViewPost';
 
 function App(props) {
 
@@ -36,6 +37,7 @@ function App(props) {
 		setLoggedIn(false)
 	}
 
+
 	return (
 		<>
 			<Navbar logout={logout} loggedIn={loggedIn}/>
@@ -47,11 +49,11 @@ function App(props) {
 					<Route path='/register' element={<Register flashMessage={flashMessage} />} />
 					<Route path='/login' element={<Login login={login} flashMessage={flashMessage} username={username} verifyUser={verifyUser} />} />
 					<Route path='/create' element={<CreatePost flashMessage={flashMessage} loggedIn={loggedIn}/>} />
-					<Route path='/view' element={<ViewPosts />} />
+					<Route path='/view' element={<ViewPosts loggedIn={loggedIn}/>} />
+					<Route path='/viewSingle' element={<ViewPost />} />
 				</Routes>
 			</div>
 		</>
-		
 	);
 }
 
