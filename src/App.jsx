@@ -8,7 +8,8 @@ import Login from './components/Login';
 import CreatePost from './components/CreatePost';
 import HomePage from './components/HomePage';
 import ViewPosts from './components/ViewPosts';
-import ViewPost from './components/ViewPost';
+import MyCard from './components/MyCard';
+
 
 function App(props) {
 
@@ -17,6 +18,7 @@ function App(props) {
 	const [message, setMessage] = useState(null);
 	const [category, setCategory] = useState(null);
 	const [loggedIn, setLoggedIn] = useState((localStorage.getItem('token') && new Date(localStorage.getItem('expiration')) > now) ? true : false)
+	const [singlePost, setSinglePost] = useState(null)
 
 	const flashMessage = (message, category) => {
 		setMessage(message);
@@ -45,12 +47,11 @@ function App(props) {
 				{message ? <AlertMessage message={message} category={category} flashMessage={flashMessage} /> : null}
 				<Routes>
 					<Route path='/' element={<HomePage />} />
-					<Route path='/profile' element={<Profile loggedIn={loggedIn} username={username} />} />
+					<Route path='/profile' element={<Profile loggedIn={loggedIn} username={username} setSinglePost={setSinglePost} />} />
 					<Route path='/register' element={<Register flashMessage={flashMessage} />} />
 					<Route path='/login' element={<Login login={login} flashMessage={flashMessage} username={username} verifyUser={verifyUser} />} />
 					<Route path='/create' element={<CreatePost flashMessage={flashMessage} loggedIn={loggedIn}/>} />
 					<Route path='/view' element={<ViewPosts loggedIn={loggedIn}/>} />
-					<Route path='/viewSingle' element={<ViewPost />} />
 				</Routes>
 			</div>
 		</>

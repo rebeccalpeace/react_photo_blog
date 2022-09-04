@@ -61,8 +61,6 @@ export default function DeleteButton({id, setBlogs}) {
 
     const {handleDeleteClick, error, newBlogs} = useDeletePost();
 
-    handleDeleteClick({id})
-
     useEffect(() => {
         if (newBlogs){
             setBlogs(newBlogs)

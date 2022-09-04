@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import WordCard from './WordCard';
 import Card from './Card';
 import { useNavigate } from 'react-router-dom';
-import ViewPost from './ViewPost';
 
 export default function ViewPosts(props) {
 
@@ -42,7 +41,7 @@ export default function ViewPosts(props) {
   return (
     <>
         {wordBlogs.map((blog, i) => <WordCard key={i} title={blog['title']} content={blog['content']} author={blog['author']['username']} />)}
-        {myBlogs.map((blog, i) => <Card key={i} title={blog['title']} content={blog['content']} />)}
+        {myBlogs.map((blog, i) => <Card key={i} title={blog['title']} content={blog['content']} id={blog['id']} />)}
     </>
   )
 }
