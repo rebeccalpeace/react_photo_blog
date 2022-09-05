@@ -3,6 +3,10 @@
     color: #ad9026;
 }
 
+.black-title:hover {
+    color: #459097;
+}
+
 .word-border {
     border: solid #7E691C 4px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;

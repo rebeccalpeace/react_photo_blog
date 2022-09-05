@@ -2,3 +2,7 @@
     background-color: #D8A3AE;
     color: #0F0F0F;
 }
+
+.del-button:hover {
+    background-color: #459097;
+}
