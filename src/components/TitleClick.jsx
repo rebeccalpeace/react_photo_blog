@@ -1,26 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from 'react'; 
+import { useNavigate } from 'react-router-dom';
 
-export default function TitleClick({id, title, setBlogs, setPostId, fetchSinglePost, setFetchSinglePost}) {
+export default function TitleClick({id, title, content}) {
+    let navigate = useNavigate();
 
-    function useTitleClick() {
-        const [newPost, setNewPost] = useState(null)
-        
-
-        const handleTitleClick = (id) => {
-            console.log('click test')
-            setFetchSinglePost(true)
-            setPostId(id)
-        }
-
-        return {
-            handleTitleClick
-        }
-    };
-
-    const {handleTitleClick} = useTitleClick();
 
     return (
-        <h5 className="card-title" onClick={() => handleTitleClick(id)}>{title}</h5>
+        <h5 className="card-title" onClick={() => (navigate('/singlePost', { state: {id: id, title: title, content: content}}))}>{title}</h5>
     )
 }

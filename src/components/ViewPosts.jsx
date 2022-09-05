@@ -2,11 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import WordCard from './WordCard';
 import Card from './Card';
-import { useNavigate } from 'react-router-dom';
 
 export default function ViewPosts(props) {
-
-    let navigate = useNavigate();
 
     const [blogs, setBlogs] = useState([]);
 
@@ -17,8 +14,6 @@ export default function ViewPosts(props) {
                 setBlogs(data)
             })
     }, []);
-
-    
 
     let myBlogs = []
     for (let i in blogs){
@@ -34,13 +29,9 @@ export default function ViewPosts(props) {
         }
     }
 
-
-
-
-
   return (
     <>
-        {wordBlogs.map((blog, i) => <WordCard key={i} title={blog['title']} content={blog['content']} author={blog['author']['username']} />)}
+        {wordBlogs.map((blog, i) => <WordCard key={i} title={blog['title']} content={blog['content']} author={blog['author']['username']} id={blog['id']} />)}
         {myBlogs.map((blog, i) => <Card key={i} title={blog['title']} content={blog['content']} id={blog['id']} />)}
     </>
   )
