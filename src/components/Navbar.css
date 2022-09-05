@@ -1,0 +1,23 @@
+.navbar-color {
+    background-color: #0F0F0F;
+}
+
+.blog-title {
+    color: #DBB84D;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.blog-links {
+    color: #D8A3AE;
+    text-decoration: none;
+}
+
+.blog-title:hover {
+    color: #459097;
+}
+
+.blog-links:hover {
+    color: #459097;
+}
+

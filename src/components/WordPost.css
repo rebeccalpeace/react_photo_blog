@@ -1,0 +1,10 @@
+.black-title {
+    background-color: #0F0F0F;
+    color: #ad9026;
+}
+
+.word-border {
+    border: solid #7E691C 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    background-color: #fcdee4;
+}

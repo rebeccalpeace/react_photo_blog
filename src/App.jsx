@@ -12,6 +12,7 @@ import MyCard from './components/MyCard';
 import SinglePost from './components/SinglePost';
 import SingleWordPost from './components/SingleWordPost';
 import EditForm from './components/EditForm';
+import './App.css';
 
 
 

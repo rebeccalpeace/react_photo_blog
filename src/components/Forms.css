@@ -1,0 +1,31 @@
+.forms-title {
+    color: #DBB84D;
+}
+
+.forms-subtitle {
+    color: #D8A3AE;
+}
+
+.forms-fields {
+    background-color: #fcdee4;
+}
+
+.form-button {
+    color: #0F0F0F;
+    background-color: #459097;
+}
+
+.home-title {
+    margin-top: 250px;
+    background-color: #0F0F0F;
+    padding: 30px 0;
+    margin-left: 250px;
+    margin-right: 250px;
+    border: solid #D8A3AE 2px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.home-title:hover {
+    border: solid #459097 2px;
+}

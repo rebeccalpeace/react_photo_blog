@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Forms.css';
 
 export default function Login(props) {
 
@@ -45,18 +46,18 @@ export default function Login(props) {
 
     return (
         <>
-            <h2 className="text-center my-3">Login</h2>
+            <h2 className="text-center my-3 fw-bold forms-title">Login</h2>
             <form className="row g-3" onSubmit={handleSubmit}>
-                <div className="col-md-6">
-                    <label htmlFor="username" className="form-label">Username</label>
-                    <input type="text" className="form-control" id="username" placeholder='Enter Username'/>
+                <div className="col-md-12 w-75 mx-auto">
+                    <label htmlFor="username" className="form-label fw-bold fs-4 forms-subtitle">Username</label>
+                    <input type="text" className="form-control forms-fields" id="username" placeholder='Enter Username'/>
                 </div>
-                <div className="col-md-6">
-                    <label htmlFor="password" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="password" name="password" placeholder="Enter Password" />
+                <div className="col-md-12 w-75 mx-auto">
+                    <label htmlFor="password" className="form-label fw-bold fs-4 forms-subtitle">Password</label>
+                    <input type="password" className="form-control forms-fields" id="password" name="password" placeholder="Enter Password" />
                 </div>
-                <div className="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" className="btn btn-primary">Login</button>
+                <div className="col-12 d-flex justify-content-center mt-5">
+                    <button type="submit" className="btn fw-bold form-button">Login</button>
                 </div>
             </form>
         </>

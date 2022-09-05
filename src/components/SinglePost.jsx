@@ -7,9 +7,9 @@ export default function SinglePost() {
 
     return (
         <>
-            <div className="card mb-3 w-50 mx-auto">
+            <div className="card mb-5 w-50 mx-auto color-card">
                 <img src={state.content} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body title-card text-center">
                     <h5>{state.title}</h5>
                 </div>
             </div>

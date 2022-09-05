@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'; 
 import { useLocation, useNavigate } from 'react-router-dom';
+import './Forms.css';
 
 
 export default function EditForm() {
@@ -48,18 +49,18 @@ export default function EditForm() {
 
     return (
         <>
-            <h2 className="text-center my-3">Edit Post</h2>
+            <h2 className="text-center my-3 fw-bold forms-title">Edit Post</h2>
             <form action="" onSubmit={handleEditSubmit}>
-                <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="form-control" id="title" name="title" placeholder={state.title} />
+                <div className="mb-3 w-75 mx-auto">
+                    <label htmlFor="title" className="form-label fs-4 fw-bold forms-subtitle">Title</label>
+                    <input type="text" className="form-control forms-fields" id="title" name="title" placeholder={state.title} />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="url" className="form-label">URL</label>
-                    <input type="text" className="form-control" id="url" name="url" placeholder={state.content} />
+                <div className="mb-3 w-75 mx-auto">
+                    <label htmlFor="url" className="form-label fs-4 fw-bold forms-subtitle">URL</label>
+                    <input type="text" className="form-control forms-fields" id="url" name="url" placeholder={state.content} />
                 </div>
-                <div className="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" className="btn btn-primary" >Submit</button>
+                <div className="col-12 d-flex justify-content-center mt-5">
+                    <button type="submit" className="btn fw-bold form-button" >Submit</button>
                 </div>
             </form>
         </>

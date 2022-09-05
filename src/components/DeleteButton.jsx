@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import './DeleteButton.css';
 
 export default function DeleteButton({id, setBlogs}) {
 
@@ -69,7 +70,7 @@ export default function DeleteButton({id, setBlogs}) {
     
     return (
         <>
-            <button className="btn btn-primary" onClick={() => handleDeleteClick(id)} >Delete</button>
+            <button className="btn btn-sm del-button fw-bold" onClick={() => handleDeleteClick(id)} >Delete</button>
         </>
     )
 }

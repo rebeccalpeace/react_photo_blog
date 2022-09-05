@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Forms.css'
 
 export default function CreatePost(props) {
 
@@ -50,18 +51,18 @@ export default function CreatePost(props) {
 
     return (
         <>
-            <h2 className="text-center my-3">Create a Post</h2>
+            <h2 className="text-center my-3 fw-bold forms-title">Create a Post</h2>
             <form action="" onSubmit={handleSubmit}>
-                <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="form-control" id="title" name="title" placeholder="Enter Title" />
+                <div className="mb-3 w-75 mx-auto">
+                    <label htmlFor="title" className="form-label fs-4 fw-bold forms-subtitle">Title</label>
+                    <input type="text" className="form-control forms-fields" id="title" name="title" placeholder="Enter Title" />
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="url" className="form-label">URL</label>
-                    <input type="text" className="form-control" id="url" name="url" placeholder='Enter URL for image' />
+                <div className="mb-3 w-75 mx-auto">
+                    <label htmlFor="url" className="form-label fs-4 fw-bold forms-subtitle">URL</label>
+                    <input type="text" className="form-control forms-fields" id="url" name="url" placeholder='Enter URL for image' />
                 </div>
-                <div className="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                <div className="col-12 d-flex justify-content-center mt-5">
+                    <button type="submit" className="btn fw-bold form-button">Submit</button>
                 </div>
             </form>
         </>
